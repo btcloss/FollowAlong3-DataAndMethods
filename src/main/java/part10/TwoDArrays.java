@@ -12,7 +12,26 @@ package part10;
 //
 // SECTION B — COMMENTS: when you finish, put a // comment ABOVE every line of code,
 //    saying in YOUR OWN WORDS what that line does. The README shows an example.
-
+// This creates TwoDArrays class that holds my program
 public class TwoDArrays {
+    //This is where my program starts running.
+    public static void main(String[] args) {
+        // This creates a 2D array to organize my cars into rows and columns.
+        String[][] cars = {
+                {"Camero", "Corvette", "Sliverado"},
+                {"Mustang", "Ranger", "F-150"},
+                {"Ferrari", "Lambo", "Tesla"}
+        };
+        // This loop goes through each row of cars in my 2D array
+        for (int i = 0; i < cars.length; i++) {
+            // This moves the next row of cars to a new line.
+            System.out.println();
+            // This loop goes through each car in the current row
+            for (int j = 0; j < cars[1].length; j++) {
+                // This prints each car name with a space between them.
+                System.out.print(cars[i][j] + " ");
+            }
+        }
 
+    }
 }

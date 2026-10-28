@@ -13,6 +13,23 @@ package part10;
 // SECTION B — COMMENTS: when you finish, put a // comment ABOVE every line of code,
 //    saying in YOUR OWN WORDS what that line does. The README shows an example.
 
+// This creates the ArrayBasics class that holds my program
 public class ArrayBasics {
-
+    // This starts my program and runs the code inside it.
+    public static void main(String[] args) {
+        // This makes an array that can hold 3 car names.
+        String[] cars = new String[3];
+        // This puts the first car name in spot 0 of my array.
+        cars[0] = "Camero";
+        // This puts Corvette in the second spot of my array.
+        cars[1] = "Corvette";
+        // This puts Tesla in the third spot of my array
+        cars[2] = "Tesla";
+        // This loop goes through each car in my array
+        for (int i = 0; i < cars.length; i++) {
+            // This prints each car name from my array
+            System.out.println(cars[i]);
+        }
+    }
 }
+
